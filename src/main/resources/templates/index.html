@@ -1,0 +1,20 @@
+<!DOCTYPE "HTML">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="'Bonjour : '+${nom}">HELLO</h1>
+<ul>
+    <a th:each="film:${films}"th:href="'detail/'+${film.id}">
+        <li th:text="${film.titre}"></li>
+    </a>
+
+
+</ul>
+</body>
+</html>
+<!--<a th:each="film:${films}"th:href="'detail/'${film.id}"><li th:text="${film.titre}"></li>-->
+    <!--Le Grand Film :-->
+<!--</a>-->

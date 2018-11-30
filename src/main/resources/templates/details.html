@@ -1,0 +1,18 @@
+<!DOCTYPE "HTML">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="'Film : '+${film.titre}"></h1>
+<h2>
+<span th:text="'la note du film : '+${film.note}"></span>
+</h2>
+<img th:src="'/image/'+${film.getAfficheNom()}">
+
+
+
+</ul>
+</body>
+</html>
